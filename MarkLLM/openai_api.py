@@ -41,7 +41,7 @@ def analyze_contribution(essay_text):
 
     # Call the OpenAI API
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",  # You can use "gpt-4" if you have access
+        model="o1-preview",  # You can use "gpt-4" if you have access
         messages=[
             {"role": "system",
              "content": "You are an assistant that analyzes essays to determine the contributions made by human and AI authors."},
